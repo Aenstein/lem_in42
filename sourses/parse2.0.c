@@ -6,7 +6,7 @@
 /*   By: aenstein <aenstein@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 16:49:36 by aenstein          #+#    #+#             */
-/*   Updated: 2020/11/05 20:06:40 by aenstein         ###   ########.fr       */
+/*   Updated: 2020/11/09 18:41:33 by aenstein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,13 @@ char	*create_name(char *name)
 	int		i;
 
 	i = 0;
-	if (!(str = (char *)ft_memalloc(sizeof(char) * ft_strlen(name) + 1)))
+	if (!(str = (char *)ft_memalloc(sizeof(char) * ft_strlen(name) + 5)))
 		exit(1);
 	while (name[i] != '\0')
 	{
 		str[i] = name[i];
 		i++;
 	}
-	str[i] = '\0';
 	return (str);
 }
 

@@ -6,7 +6,7 @@
 /*   By: aenstein <aenstein@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 17:13:34 by aenstein          #+#    #+#             */
-/*   Updated: 2020/11/05 18:24:44 by aenstein         ###   ########.fr       */
+/*   Updated: 2020/11/10 16:57:32 by aenstein         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	parse_ants(t_lemin *lemin, char **line)
 {
-	get_next_line(0, line);
+	get_next_line(lemin->fd, line);
 	if (!(ft_isint(*line)))
 		exit(1);
 	lemin->ants = ft_atoi(*line);
