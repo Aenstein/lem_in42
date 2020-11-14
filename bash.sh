@@ -1,1 +1,0 @@
-gcc -g sourses/*.c -I includes lib/libftprintf.a
